@@ -8,25 +8,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var InputPropertyComponent = (function () {
-    function InputPropertyComponent() {
-        this.nomeCurso = 'data-binding.component.html';
+var core_1 = require("@angular/core");
+var AppComponent = (function () {
+    function AppComponent() {
+        this.name = 'Angular';
+        this.deletarConteudo = false;
+        this.valorInicial = 15;
     }
-    __decorate([
-        core_1.Input('nome'), 
-        __metadata('design:type', String)
-    ], InputPropertyComponent.prototype, "nomeCurso", void 0);
-    InputPropertyComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'curso',
-            template: '{{ nomeCurso }}',
-        }), 
-        __metadata('design:paramtypes', [])
-    ], InputPropertyComponent);
-    return InputPropertyComponent;
+    return AppComponent;
 }());
-exports.InputPropertyComponent = InputPropertyComponent;
+AppComponent = __decorate([
+    core_1.Component({
+        selector: 'my-app',
+        template: "\n    <lifecycle [valorInicial]=\"valorInicial\" *ngIf=\"!deletarConteudo\"></lifecycle>\n    <button (click)=\"valorInicial = 20\">Mudar o valor</button>\n    <button (click)=\"deletarConteudo = true\">Deletar tag life cycle</button>\n  ",
+    }),
+    __metadata("design:paramtypes", [])
+], AppComponent);
+exports.AppComponent = AppComponent;
 
-//# sourceMappingURL=input-property.component.js.map
+//# sourceMappingURL=app.component.js.map

@@ -8,20 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var data_binding_component_1 = require('./data-binding/data-binding.component');
-var input_property_component_1 = require('./data-binding/input-property.component');
+var core_1 = require("@angular/core");
+var data_binding_component_1 = require("./data-binding/data-binding.component");
+var input_property_component_1 = require("./data-binding/input-property.component");
 var DirectivesModule = (function () {
     function DirectivesModule() {
     }
-    DirectivesModule = __decorate([
-        core_1.NgModule({
-            declarations: [data_binding_component_1.DataBindingComponent, input_property_component_1.InputPropertyComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], DirectivesModule);
     return DirectivesModule;
 }());
+DirectivesModule = __decorate([
+    core_1.NgModule({
+        declarations: [data_binding_component_1.DataBindingComponent, input_property_component_1.InputPropertyComponent]
+    }),
+    __metadata("design:paramtypes", [])
+], DirectivesModule);
 exports.DirectivesModule = DirectivesModule;
 
 //# sourceMappingURL=directives.module.js.map

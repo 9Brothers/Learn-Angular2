@@ -8,20 +8,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.name = 'Angular';
+var core_1 = require("@angular/core");
+var InputPropertyComponent = (function () {
+    function InputPropertyComponent() {
+        this.nomeCurso = 'data-binding.component.html';
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            template: "\n    <exemplo-data-binding></exemplo-data-binding>\n  ",
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    return InputPropertyComponent;
 }());
-exports.AppComponent = AppComponent;
+__decorate([
+    core_1.Input('nome'),
+    __metadata("design:type", String)
+], InputPropertyComponent.prototype, "nomeCurso", void 0);
+InputPropertyComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'curso',
+        template: '{{ nomeCurso }}',
+    }),
+    __metadata("design:paramtypes", [])
+], InputPropertyComponent);
+exports.InputPropertyComponent = InputPropertyComponent;
 
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=input-property.component.js.map
