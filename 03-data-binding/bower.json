@@ -1,0 +1,21 @@
+{
+  "name": "angular-quickstart",
+  "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "main": "",
+  "authors": [
+    "Heber Teixeira <heber_navegante@live.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/angular/quickstart",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
