@@ -1,16 +1,30 @@
 # Aprendendo Angular 2
 
-## Eventos
-**ngOnChanges:** antes do *ngOnInit* e quando valor *property-binding* é atualizado.
+## Components
+**ng g c 'nome do componente':** utilizado para criar componentes
 
-**ngOnInit:** quando Component é inicializado.
+## Events
+***ngOnChanges:** antes do *ngOnInit* e quando valor *property-binding* é atualizado.
 
-**ndDoCheck:** a cada ciclo de verificação de mudanças.
+***ngOnInit:** quando Component é inicializado.
 
-**ngAfterContentInit:** depois de inserir conteúdo externo na view.
+***ndDoCheck:** a cada ciclo de verificação de mudanças.
 
-**ngAfterContentChecked:** a cada verificação de conteúdo inserido.
+***ngAfterContentInit:** depois de inserir conteúdo externo na view.
 
-**ngAfterViewChecked:** a cada verificação de conteúdo / conteúdo filho.
+***ngAfterContentChecked:** a cada verificação de conteúdo inserido.
 
-**ngOnDestroy:** antes da diretiva/component ser destruído.
+***ngAfterViewChecked:** a cada verificação de conteúdo / conteúdo filho.
+
+***ngOnDestroy:** antes da diretiva/component ser destruído.
+
+
+## Loops
+***ngFor="let item in items"**
+
+
+## Services
+**ng g s:** utilizado para criar serviços, também pode ser escrito **ng generate service**
+
+
+## Property Binding e Interpolação
